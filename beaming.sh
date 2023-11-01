@@ -81,7 +81,7 @@
 
         echo "Getting latest release"
         latest_release_uri="https://github.com/slai-labs/get-beam/releases"
-        latest_release_tag=$(curl -sL -o /dev/null -w %{url_effective} $latest_release_uri/tag/0.16.2 | rev | cut -d/ -f1 | rev)
+        latest_release_tag=$(curl -sL -o /dev/null -w %{url_effective} $latest_release_uri/tag/0.16.3 | rev | cut -d/ -f1 | rev)
 
         echo "Latest release: $latest_release_tag"
         latest_beam_binary_uri="$latest_release_uri/download/$latest_release_tag/$bin_file"
